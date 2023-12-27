@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: quest
+    password: quest
+rabbitmq:
+  queue:
+    name: newspaper
+    json:
+      name: newspaper_json
+  exchange:
+    name: newspaper_exchange
+  routing:
+    key: newspaper_routing_key
+    json:
+      key: newspaper_routing_json_key
