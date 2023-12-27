@@ -10,10 +10,9 @@ public class RabbitMQConsumer {
 
 
     @RabbitListener(queues = {"${rabbitmq.queue.name}"})
-        public void consume(String message){
+    public void consume(String message) {
         log.info("Message received -> {}", message);
     }
-
 
 
 }

@@ -2,7 +2,7 @@ services:
   rabbitmq:
     image: 'rabbitmq:latest'
     environment:
-      - 'RABBITMQ_DEFAULT_PASS=secret'
-      - 'RABBITMQ_DEFAULT_USER=myuser'
+      - 'RABBITMQ_DEFAULT_PASS=quest'
+      - 'RABBITMQ_DEFAULT_USER=quest'
     ports:
       - '5672'
